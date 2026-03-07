@@ -23,8 +23,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-1">Email</p>
-                    <a href="mailto:contacto@ejemplo.com" className="hover:underline">
-                      contacto@ejemplo.com
+                    <a href="mailto:p.rojassilva106@gmail.com" className="hover:underline">
+                      p.rojassilva106@gmail.com
                     </a>
                   </div>
                 </div>
@@ -35,8 +35,8 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-1">Teléfono</p>
-                    <a href="tel:+34000000000" className="hover:underline">
-                      +34 000 000 000
+                    <a href="tel:+56930222463" className="hover:underline">
+                      +56 9 3022 2463
                     </a>
                   </div>
                 </div>
@@ -47,7 +47,7 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-muted-foreground mb-1">Ubicación</p>
-                    <p>Madrid, España</p>
+                    <p>Melipilla, Chile</p>
                   </div>
                 </div>
               </div>

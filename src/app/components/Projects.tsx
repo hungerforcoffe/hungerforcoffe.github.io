@@ -43,8 +43,8 @@ export function Projects() {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl mb-4">Proyectos Destacados</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
-            Una selección de mis trabajos más recientes en ciencia de datos, 
-            desarrollo web y tecnologías emergentes.
+            Una selección de mis trabajos en ciencia e investigación, con un enfoque en
+            desarrollo de soluciones en base a datos.
           </p>
         </div>
         
