@@ -6,7 +6,7 @@ export function Projects() {
     {
       title: 'Análisis Predictivo de Datos',
       description: 'Sistema de machine learning para predicción de tendencias basado en análisis de datos complejos.',
-      image: 'https://images.unsplash.com/photo-1642775196125-38a9eb496568?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwZGF0YXxlbnwxfHx8fDE3NzI4Mzk2NjN8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+      image: 'https://source.unsplash.com/featured/?stars,astronomy',
       tags: ['Python', 'TensorFlow', 'Pandas'],
       github: 'https://github.com',
       demo: 'https://ejemplo.com'
