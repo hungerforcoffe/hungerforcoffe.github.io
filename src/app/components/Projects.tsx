@@ -11,11 +11,11 @@ export function Projects() {
       github: 'https://github.com/hungerforcoffe/Stellar-spectral-scans-with-the-ALMA-Compact-Array'
     },
     {
-      title: 'Plataforma de Investigación',
-      description: 'Herramienta colaborativa para gestión y análisis de experimentos científicos en laboratorio.',
-      image: 'https://images.unsplash.com/photo-1614308457932-e16d85c5d053?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxsYWJvcmF0b3J5JTIwc2NpZW5jZSUyMG1pY3Jvc2NvcGV8ZW58MXx8fHwxNzcyODM5NjYzfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com'
+      title: 'Scraping Web/Analisis Paquetes Latam Chile',
+      description: 'Herramienta para el analisis temporal de precios de paquetes LATAM Chile',
+      image: 'https://images.unsplash.com/photo-1615317779547-2078d82c549a?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      tags: ['Python', 'HTML', 'PostgreSQL'],
+      github: 'https://github.com/hungerforcoffe/Skylines-price-overtime-Chile-LATAM'
     },
     {
       title: 'Visualización Molecular',
