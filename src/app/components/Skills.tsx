@@ -7,7 +7,7 @@ const skillCategories = [
       { name: "Python", pct: 92 },
       { name: "SQL", pct: 82 },
       { name: "Bash / Shell", pct: 72 },
-      { name: "R", pct: 58 },
+      { name: "C+", pct: 58 },
     ],
   },
   {
@@ -25,7 +25,7 @@ const skillCategories = [
       { name: "Pandas / NumPy / SciPy", pct: 90 },
       { name: "Matplotlib / Seaborn", pct: 85 },
       { name: "Excel Avanzado", pct: 80 },
-      { name: "Git & Control de Versiones", pct: 75 },
+      { name: "Power BI", pct: 75 },
     ],
   },
 ];
@@ -71,7 +71,7 @@ export function Skills() {
     <section id="habilidades" className="py-20 px-6 bg-muted/30">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl mb-4">Habilidades Técnicas</h2>
+          <h2 className="text-4xl md:text-5xl mb-4">Habilidades</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
             Tecnologías y herramientas con las que trabajo diariamente
           </p>
