@@ -5,7 +5,7 @@ export function Projects() {
   const projects = [
     {
       title: 'Analsís de datos Radioastronomía ALMA',
-      description: 'Analisis para proyecto de calculo de perdidaa de masa de estrllas AGB/Post-AGB.',
+      description: 'Analisis para proyecto de calculo de perdida de masa de estrellas AGB/Post-AGB.',
       image: 'https://images.unsplash.com/photo-1695335821100-26b558645945?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Python', 'Matplotlib', 'Pandas'],
       github: 'https://github.com/hungerforcoffe/Stellar-spectral-scans-with-the-ALMA-Compact-Array'

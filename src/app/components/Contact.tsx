@@ -1,6 +1,39 @@
 import { Mail, MapPin, Phone } from 'lucide-react';
+import { useNavigate } from 'react-router';
+import React, { useState } from 'react';
 
 export function Contact() {
+  const navigate = useNavigate();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.ok) {
+        navigate('/success');
+      } else {
+        alert('Hubo un error al enviar el mensaje. Inténtalo de nuevo.');
+      }
+    } catch (error) {
+      alert('Error de conexión. Inténtalo de nuevo.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  
   return (
     <section id="contacto" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -61,7 +94,12 @@ export function Contact() {
           </div>
           
           <div>
-            <form className="space-y-6">
+            <form 
+              onSubmit={handleSubmit}
+              action="https://formspree.io/f/xbdzobog" 
+              method="POST"
+              className="space-y-6"
+            >
               <div>
                 <label htmlFor="name" className="block mb-2">
                   Nombre
@@ -69,6 +107,8 @@ export function Contact() {
                 <input
                   type="text"
                   id="name"
+                  name="name"
+                  required
                   className="w-full px-4 py-3 bg-input-background rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="Tu nombre"
                 />
@@ -81,6 +121,8 @@ export function Contact() {
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  required
                   className="w-full px-4 py-3 bg-input-background rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ring"
                   placeholder="tu@email.com"
                 />
@@ -92,6 +134,8 @@ export function Contact() {
                 </label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows={6}
                   className="w-full px-4 py-3 bg-input-background rounded-lg border border-border focus:outline-none focus:ring-2 focus:ring-ring resize-none"
                   placeholder="Cuéntame sobre tu proyecto..."
@@ -100,9 +144,10 @@ export function Contact() {
               
               <button
                 type="submit"
-                className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity"
+                disabled={isSubmitting}
+                className="w-full px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed flex justify-center items-center gap-2"
               >
-                Enviar Mensaje
+                {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
               </button>
             </form>
           </div>
