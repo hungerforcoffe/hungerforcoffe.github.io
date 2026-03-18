@@ -21,7 +21,7 @@ export function Projects() {
     },
     {
       title: 'VLTI/AMBER — Estrellas AGB con Molsphere',
-      description: 'Análisis de 14 estrellas con presencia de Molsphere para construir un modelo simple LTE. Investigación de 2 años.',
+      description: 'Análisis de 14 estrellas con presencia de Molsphere para construir un modelo simple LTE.',
       image: 'https://images.unsplash.com/photo-1579899967070-4ec07e4ff5c5?q=80&w=1614&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Python', 'Bash', 'Matplotlib'],
       github: null,
