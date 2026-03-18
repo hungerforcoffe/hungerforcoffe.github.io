@@ -1,6 +1,6 @@
-import { ExternalLink, Github, GithubIcon } from 'lucide-react';
+import { Github } from 'lucide-react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-
+ 
 export function Projects() {
   const projects = [
     {
@@ -28,7 +28,7 @@ export function Projects() {
       closedSource: true,
     },
   ];
-
+ 
   return (
     <section id="proyectos" className="py-20 px-6">
       <div className="max-w-6xl mx-auto">
@@ -38,7 +38,7 @@ export function Projects() {
             Algunos de los proyectos en los que he trabajado
           </p>
         </div>
-
+ 
         <div className="grid md:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-background rounded-xl border border-border overflow-hidden flex flex-col">
@@ -49,11 +49,11 @@ export function Projects() {
                   className="w-full h-full object-cover"
                 />
               </div>
-
+ 
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-lg font-semibold mb-2">{project.title}</h3>
                 <p className="text-muted-foreground text-sm mb-4">{project.description}</p>
-
+ 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.tags.map((tag, i) => (
                     <span
@@ -64,7 +64,7 @@ export function Projects() {
                     </span>
                   ))}
                 </div>
-
+ 
                 <div className="mt-auto">
                   {project.closedSource ? (
                     <div className="flex items-start gap-3 p-3 rounded-lg bg-muted/60 border border-border">
@@ -77,31 +77,20 @@ export function Projects() {
                           <div className="w-full h-px bg-muted-foreground" />
                         </div>
                       </div>
-                      {project.closedSource ? (
-                        <div className="flex items-start gap-3 p-3 rounded-lg bg-muted/60 border border-border">
-                          <div className="relative shrink-0 mt-0.5">
-                            <Github size={18} className="text-muted-foreground" />
-                            <div
-                              className="absolute inset-0 flex items-center justify-center"
-                              style={{ transform: 'rotate(-45deg)' }}
-                            >
-                              <div className="w-full h-px bg-muted-foreground" />
-                            </div>
-                          </div>
-                          <p className="text-xs text-muted-foreground leading-relaxed">
-                            {'Código cerrado — investigación privada. '}
-                            
-                              href="#contacto"
-                              className="underline underline-offset-2 hover:text-foreground transition-colors"
-                            >
-                              Contáctame
-                            </a>
-                            {' si quieres saber más.'}
-                          </p>
-                        </div>
-                      ) : (
-                    
-                      href={project.github}
+                      <p className="text-xs text-muted-foreground leading-relaxed">
+                        Código cerrado — investigación privada.{' '}
+                        <a
+                          href="#contacto"
+                          className="underline underline-offset-2 hover:text-foreground transition-colors"
+                        >
+                          Contáctame
+                        </a>
+                        {' si quieres saber más.'}
+                      </p>
+                    </div>
+                  ) : (
+                    <a
+                      href={project.github ?? '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
