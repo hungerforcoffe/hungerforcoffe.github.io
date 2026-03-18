@@ -39,7 +39,7 @@ export function Projects() {
           </p>
         </div>
  
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} className="bg-background rounded-xl border border-border overflow-hidden flex flex-col">
               <div className="h-48 overflow-hidden">
