@@ -14,22 +14,8 @@ export function Projects() {
       title: 'Scraping Web/Analisis Paquetes Latam Chile',
       description: 'Herramienta para el analisis temporal de precios de paquetes LATAM Chile',
       image: 'https://images.unsplash.com/photo-1615317779547-2078d82c549a?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      tags: ['Python', 'HTML', 'PostgreSQL'],
+      tags: ['Python', 'HTML', 'SQLite'],
       github: 'https://github.com/hungerforcoffe/Skylines-price-overtime-Chile-LATAM'
-    },
-    {
-      title: 'Visualización Molecular',
-      description: 'Aplicación interactiva para visualización 3D de estructuras moleculares y simulaciones químicas.',
-      image: 'https://images.unsplash.com/photo-1740666387475-548de5c37691?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2xlY3VsYXIlMjBzdHJ1Y3R1cmUlMjBjaGVtaXN0cnl8ZW58MXx8fHwxNzcyODA5Nzk2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['Three.js', 'WebGL', 'TypeScript'],
-      github: 'https://github.com'
-    },
-    {
-      title: 'Sistema de IoT Inteligente',
-      description: 'Red de sensores conectados con análisis en tiempo real y dashboard de monitoreo.',
-      image: 'https://images.unsplash.com/photo-1761078739233-629de9252840?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNobm9sb2d5JTIwYWJzdHJhY3QlMjBjaXJjdWl0fGVufDF8fHx8MTc3MjgzOTY2Mnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
-      tags: ['Arduino', 'MQTT', 'React'],
-      github: 'https://github.com'
     }
   ];
 
