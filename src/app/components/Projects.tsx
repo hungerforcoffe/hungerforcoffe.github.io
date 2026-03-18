@@ -77,18 +77,29 @@ export function Projects() {
                           <div className="w-full h-px bg-muted-foreground" />
                         </div>
                       </div>
-                      <p className="text-xs text-muted-foreground leading-relaxed">
-                        Código cerrado — investigación privada.{' '}
-                        
-                          href="#contacto"
-                          className="underline underline-offset-2 hover:text-foreground transition-colors"
-                        >
-                          Contáctame
-                        </a>{' '}
-                        si quieres saber más.
-                      </p>
-                    </div>
-                  ) : (
+                      {project.closedSource ? (
+                        <div className="flex items-start gap-3 p-3 rounded-lg bg-muted/60 border border-border">
+                          <div className="relative shrink-0 mt-0.5">
+                            <Github size={18} className="text-muted-foreground" />
+                            <div
+                              className="absolute inset-0 flex items-center justify-center"
+                              style={{ transform: 'rotate(-45deg)' }}
+                            >
+                              <div className="w-full h-px bg-muted-foreground" />
+                            </div>
+                          </div>
+                          <p className="text-xs text-muted-foreground leading-relaxed">
+                            {'Código cerrado — investigación privada. '}
+                            
+                              href="#contacto"
+                              className="underline underline-offset-2 hover:text-foreground transition-colors"
+                            >
+                              Contáctame
+                            </a>
+                            {' si quieres saber más.'}
+                          </p>
+                        </div>
+                      ) : (
                     
                       href={project.github}
                       target="_blank"
