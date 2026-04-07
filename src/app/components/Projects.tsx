@@ -16,8 +16,8 @@ export function Projects() {
       description: 'Herramienta para el análisis temporal de precios de paquetes LATAM Chile.',
       image: 'https://images.unsplash.com/photo-1615317779547-2078d82c549a?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
       tags: ['Python', 'HTML', 'SQLite'],
-      github: 'https://github.com/hungerforcoffe/Skylines-price-overtime-Chile-LATAM',
-      closedSource: false,
+      github: null,
+      closedSource: true,
     },
     {
       title: 'VLTI/AMBER — Estrellas AGB con Molsphere',
