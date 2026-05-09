@@ -78,7 +78,7 @@ export function Projects() {
                         </div>
                       </div>
                       <p className="text-xs text-muted-foreground leading-relaxed">
-                        Código cerrado — investigación privada.{' '}
+                        Código cerrado .{' '}
                         <a
                           href="#contacto"
                           className="underline underline-offset-2 hover:text-foreground transition-colors"
