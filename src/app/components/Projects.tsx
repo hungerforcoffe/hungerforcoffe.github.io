@@ -4,6 +4,14 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 export function Projects() {
   const projects = [
     {
+      title: 'NaviCast-CL — Pipeline Geoespacial AIS',
+      description: 'Pipeline end-to-end de datos AIS de embarcaciones: predicción de ETA con LSTM y detección de "dark ships" mediante anomalías en el transpondedor.',
+      image: 'https://images.unsplash.com/photo-1617952739858-28043cecdae3?q=80&w=1170&auto=format&fit=crop',
+      tags: ['Python', 'DuckDB', 'PyTorch', 'AWS'],
+      github: 'https://github.com/hungerforcoffe/navicast-cl',
+      closedSource: false,
+    },
+    {
       title: 'Análisis de datos Radioastronomía ALMA',
       description: 'Análisis para proyecto de cálculo de pérdida de masa de estrellas AGB/Post-AGB.',
       image: 'https://images.unsplash.com/photo-1695335821100-26b558645945?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
